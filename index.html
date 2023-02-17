@@ -15,6 +15,7 @@
         <title>Frontend Mentor | Intro component with sign up form</title>
 
         <link rel="stylesheet" href="./assets/css/styles.css" />
+        <meta name="theme-color" content="hsl(0, 100%, 74%)" />
         <style>
             .attribution {
                 color: #fff;
@@ -39,13 +40,15 @@
                 </p>
             </section>
             <section class="login">
-                <button class="trial__btn" onclick="alertar()">
-                    Try it free 7 days
-                    <span class="btn__weight__change">
-                        then $20/mo. thereafter
-                    </span>
+                <button class="trial__btn">
+                    <a href="#login__form"
+                        >Try it free 7 days
+                        <span class="btn__weight__change">
+                            then $20/mo. thereafter
+                        </span></a
+                    >
                 </button>
-                <form class="login__form">
+                <form class="login__form" id="login__form">
                     <input
                         type="text"
                         placeholder="First Name "
