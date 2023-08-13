@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 :root {
     --font: "Poppins", sans-serif;
     --weight-400: 400;
@@ -14,6 +15,7 @@
     --mobile: 375px;
     --desktop: 1024px;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -22,10 +24,12 @@
     box-sizing: border-box;
     font-family: var(--font);
 }
+
 body {
     background-image: url(../../images/bg-intro-mobile.png);
     background-color: var(--red);
 }
+
 .card {
     height: 100vh;
     display: flex;
@@ -34,19 +38,23 @@ body {
     justify-content: space-around;
     padding: 1rem;
 }
+
 .card__subs {
     text-align: center;
     color: #fff;
 }
+
 .subs__title {
     font-size: 1.7rem;
     font-weight: var(--weight-700);
 }
+
 .subs__description {
     font-weight: var(--weight-400);
     color: #ffffffa8;
     margin: 1.1rem 0;
 }
+
 .trial__btn {
     font-weight: var(--weight-600);
     font-size: 1rem;
@@ -60,14 +68,17 @@ body {
     transition: all 0.4s ease-in;
     cursor: pointer;
 }
+
 .trial__btn:hover {
     transform: translateY(7px);
     box-shadow: none;
 }
+
 .btn__weight__change {
     color: #ffffffa8;
     font-weight: var(--weight-400);
 }
+
 .login__form {
     margin: 1.5rem 0;
     background-color: #fff;
@@ -79,12 +90,14 @@ body {
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 2px 0px;
 }
+
 .login__form input {
     font-weight: var(--weight-700);
     padding: 1rem;
     border-radius: 5px;
     border: 1px solid #bdbcbc;
 }
+
 .form__btn {
     padding: 1rem 0;
     background-color: var(--green);
@@ -95,39 +108,54 @@ body {
     font-size: 1rem;
     transition: all 1s ease-out;
 }
+
 .form__btn:hover {
     cursor: pointer;
     background-color: var(--green-v2);
 }
+
 .login__description {
     font-size: 0.8rem;
     color: #7f7f7f;
     text-align: center;
     padding: 10px;
 }
+
 .terms__services {
     color: var(--red);
     font-weight: var(--weight-700);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 @media screen and (min-width: 900px) {
     body {
         background-image: url(../../images/bg-intro-desktop.png);
     }
+
     .card {
         flex-direction: row;
         padding: 0 5rem;
     }
+
     .card__subs {
         width: 45%;
         text-align: left;
     }
+
     .subs__title {
         font-size: 3rem;
     }
+
     .login {
         width: 45%;
     }
+
     .trial__btn:active {
         scroll-behavior: none;
     }
